@@ -51,6 +51,7 @@ class Videodetails(models.Model):
     duration = models.DurationField(blank=True, null=True)
     views = models.IntegerField(blank=True, null=True)
     likes = models.IntegerField(blank=True, null=True)
+    dislikes = models.IntegerField(blank=True, null=True)
     fun_tokens = models.IntegerField(blank=True, null=True)
     value_tokens = models.IntegerField(blank=True, null=True)
     comments = models.IntegerField(blank=True, null=True)
