@@ -136,7 +136,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 MEDIA_ROOT = os.path.join(DATA_DIR, 'media')
 MEDIA_URL = os.path.join('/media/')
 
-AUTH_USER_MODEL = 'user.userdata'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -249,9 +248,9 @@ JAZZMIN_SETTINGS["show_ui_builder"] = True
 #     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(minutes=30),
 # }
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         'rest_framework_simplejwt.authentication.JWTAuthentication',
+#     ),
+# }
 
