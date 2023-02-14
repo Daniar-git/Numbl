@@ -9,12 +9,8 @@ class WatchSerializers(serializers.ModelSerializer):
 class UploadSerilizers(serializers.ModelSerializer):
     class Meta:
         model = Videodetails
-        fields = ['title','description','video_file','upload_date','duration','tags','category']
+        fields = ['title','description','video_file','tags','category_name']
 
-class CategorySerializers(serializers.ModelSerializer):
-    class Meta:
-        model = Categories
-        fields = ['category_id']
 
 class AllCategoriesSerializers(serializers.ModelSerializer):
     class Meta:

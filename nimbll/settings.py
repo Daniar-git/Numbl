@@ -46,8 +46,8 @@ INSTALLED_APPS = [
     'user',
     'video',
     'rest_framework',
-    'djoser',
-    'rest_framework_simplejwt',
+    # 'djoser',
+    # 'rest_framework_simplejwt',
 ]
 
 MIDDLEWARE = [
@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'nimbll.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'hub',
+        'NAME': 'Final',
         'USER': 'postgres',
         'PASSWORD': '1000',
         'HOST': 'localhost',
@@ -231,7 +231,7 @@ JAZZMIN_SETTINGS["show_ui_builder"] = True
 #     'JWK_URL': None,
 #     'LEEWAY': 0,
 #
-#     'AUTH_HEADER_TYPES': ('Bearer',),
+#     'AUTHAUTH_HEADER_TYPES': ('Bearer',),
 #     'AUTH_HEADER_NAME': 'HTTP_AUTHORIZATION',
 #     'USER_ID_FIELD': 'id',
 #     'USER_ID_CLAIM': 'user_id',

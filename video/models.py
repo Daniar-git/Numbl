@@ -57,6 +57,7 @@ class Videodetails(models.Model):
     comments = models.IntegerField(blank=True, null=True)
     tags = models.TextField(blank=True, null=True)
     upload_date = models.DateTimeField(blank=True, null=True)
+    category_name = models.TextField(blank=True,null=True)
     category = models.ForeignKey(Categories, models.DO_NOTHING, db_column='category')
     privacy = models.CharField(max_length=10, blank=True, null=True)
 
